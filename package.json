@@ -147,6 +147,7 @@
         "build": "cross-env CI= GENERATE_SOURCEMAP=false react-app-rewired build",
         "eject": "react-app-rewired eject",
         "test": "react-app-rewired test --env=jsdom",
+		"deploy": "gh-pages -b master -d build",
         "integration-test": "start-server-and-test 'serve build -l 3000' http://localhost:3000 'cypress run'",
         "prepare": "husky install"
     },
